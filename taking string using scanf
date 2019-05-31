@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() 
+{
+  char *ch;  
+  char s[1000];
+  scanf("%[^\n]s",s);
+  ch=s;
+  while(*ch!='\0')
+  {
+      if(*ch==' ')
+      {
+          printf("\n");
+      }
+      else
+      {
+          printf("%c",*ch);
+      }
+      ch++;
+  }
+  return 0;  
+}
